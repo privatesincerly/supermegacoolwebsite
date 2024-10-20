@@ -1,0 +1,55 @@
+:root {
+    --bg-color: #030214;
+    --text-color: azure;
+    --section-bg-color: #0D0C24;
+    --section-text-color: #1E1C42;
+
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    height: 100vh;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.header {
+    padding: 10%;
+}
+
+.header .navbox {
+    position: relative;
+    float: right;
+    height: 100vh;
+}
+
+.header .navbox .nav {
+    position: fixed;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.header .navbox .nav ul.navlist {
+    list-style: circle;
+}
+
+.header .navbox .nav ul.navlist a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.header .navbox .nav ul.navlist a li {
+    transition: all, 2s, ease-in-out;
+}
+
+.header .navbox .nav ul.navlist a li:hover {
+    background-color: var(--section-bg-color);
+    border-radius: 5%;
+    padding: 10px;
+}
